@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <ion-card-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating"> Nom <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input type= "text" required= "true"  [(ngModel)]="user.nom"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Prénom <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input type= "text" required= "true"  [(ngModel)]="user.prenom"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Mot de passe <ion-text color="danger">*</ion-text></ion-label>
+      <ion-input type= "password" required= "true"  [(ngModel)]="user.passe"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type= "email" required= "true"  [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Ville</ion-label>
+      <ion-input type= "text" required= "true"  [(ngModel)]="user.ville"></ion-input>
+    </ion-item>
+    <ion-button class="ion-margin" color="danger" expand= "block" (click)="addUser()">Envoyer</ion-button>
+  </ion-list>
+</ion-card-content>
+</ion-card>
+
+</ion-content>
